@@ -5,7 +5,7 @@
   vars:
     vpc_cidr: "10.0.0.0/16"
     subnet_cidr: "10.0.1.0/24"
-    instance_type: "t2.micro"
+    instance_type: "t2.small"
     ami_id: "ami-0a0bff6476c1e1cb4"  # Example AMI for Amazon Linux 2
     region: "ap-south-1"
     key_name: "anshul-test"  # Replace with your key pair
@@ -104,7 +104,6 @@
         vpc_subnet_id: "{{ subnet.subnet.id }}"
         security_group: "{{ security_group.group_id }}"
         region: "{{ region }}"
-        availability_zone: "{{ region }}a"
         tags:
           Name: "{{ tag_name }}-instance"
       when: not teardown
