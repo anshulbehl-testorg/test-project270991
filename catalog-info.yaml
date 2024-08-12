@@ -1,0 +1,20 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: BLUEPRINT-testns270991.rhdhtest1234
+  description: Test repo
+  tags:
+    - ansible
+    - playbook
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: anshulbehl-testorg/test-project270991
+  links:
+    - url: https://devspaces.apps.sandbox-m4.g2pi.p1.openshiftapps.com/#https://github.com/anshulbehl-testorg/test-project270991
+      title: Open Ansible project in OpenShift Dev Spaces
+      icon: web
+spec:
+  type: playbook-project
+  lifecycle: production
+  owner: user:default/anshulbehl
