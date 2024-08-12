@@ -8,3 +8,7 @@ ami_mapping:
   ap-south-1:
     RHEL8: ami-03c322da7f85cfd86
     RHEL9: ami-02c1ed6aaf44207bb
+
+teardown_mapping:
+  yes: true
+  no: false
