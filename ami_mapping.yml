@@ -10,5 +10,5 @@ ami_mapping:
     RHEL9: ami-02c1ed6aaf44207bb
 
 teardown_mapping:
-  yes: true
-  no: false
+  "yes": true
+  "no": false
