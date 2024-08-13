@@ -7,7 +7,5 @@
     subnet_cidr: "10.0.1.0/24"
     key_name: "anshul-test"
     instance_type: "t2.small"
-  vars_files:
-    - mapping.yml
   roles:
     - testns270991.rhdhtest1234.run
