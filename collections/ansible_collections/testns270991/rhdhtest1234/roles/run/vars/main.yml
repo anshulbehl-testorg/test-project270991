@@ -1,4 +1,4 @@
-ami_mapping:
+run_ami_mapping:
   us-east-1:
     RHEL8: ami-0b98e4baa65866e4a
     RHEL9: ami-07f649370edde1945
@@ -9,6 +9,6 @@ ami_mapping:
     RHEL8: ami-03c322da7f85cfd86
     RHEL9: ami-02c1ed6aaf44207bb
 
-teardown_mapping:
+run_teardown_mapping:
   "yes": true
   "no": false
