@@ -1,0 +1,12 @@
+---
+controller_templates:
+- name: Blueprint / AWS Blueprint
+  job_type: run
+  inventory: Demo Inventory
+  execution_environment: "AWS EE"
+  survey_enabled: true
+  survey: "{{ lookup('template', 'template_surveys/basic_survey.json') | regex_replace('\\n', '') }}"
+  project: AWS Blueprint Project
+  playbook: aws_playbook.yml
+  credentials:
+  - AWS Credential
