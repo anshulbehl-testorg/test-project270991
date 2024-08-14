@@ -11,6 +11,4 @@
       ansible.builtin.include_vars:
         dir: ./yaml
         ignore_files: [controller_config.yml.template]
-        extensions: ["yml"]
-  roles:
-    - {role: infra.controller_configuration.job_templates, when: controller_templates is defined}
+        extensions: [yml]
